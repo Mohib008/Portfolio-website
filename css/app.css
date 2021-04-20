@@ -6,6 +6,8 @@
   --mainText:rgb(40, 42, 40);
   --secondaryText:darkgrey;
   --themeDotBorder:rgb(39, 37, 49);
+  --previewBg:rgb(251, 249, 243, 0.8);
+  --previewShadow: #f0ead6;
 }
 
 html, body {
@@ -126,8 +128,63 @@ h6{ font-size: 16px; }
     background-color: #2ACA3E;
 }
 
+.right-column{
+    grid-area: right-column;
+    padding: 50px 0 50px 0;
+    display: grid;
+    align-content: center;
+
+}
+
+#preview-shadow{
+    background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#preview{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.corner{
+    border: 1.5px solid #17a2b8;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+}
+
+#corner-tl{
+    top: -5px;
+    left: -5px;
+}
+
+#corner-tr{
+    top: -5px;
+    right: -5px;
+}
+
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+}
+
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+}
+
 .left-column{
     grid-area: left-column;
+    padding: 50px 0 50px 0;
 }
 #profile-pic{
     display: block;
@@ -179,9 +236,29 @@ h6{ font-size: 16px; }
     background-color: #7E4C75;
 }
 
+#sittings-note{
+    text-align: center;
+    font-style: italic;
+    font-size: 12;
+}
 
-@media screen and (max-wight: 1200px) {
+@media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+    .intro-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+       "nav-wrapper"
+       "left-column" 
+       "right-column"
+    ;
+  }
+  .right-column{
+      justify-content: center;
+  }
 }
