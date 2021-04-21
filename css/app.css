@@ -142,6 +142,36 @@ h6{ font-size: 16px; }
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
+    position: relative;
+}
+
+.corner0{
+    border: 1.5px solid var(--previewShadow);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--previewBg);
+    position: absolute;
+}
+
+#corner0-tl{
+    top: -5px;
+    left: -5px;
+}
+
+#corner0-tr{
+    top: -5px;
+    right: -5px;
+}
+
+#corner0-bl{
+    bottom: -5px;
+    left: -5px;
+}
+
+#corner-br{
+    bottom: -5px;
+    right: -5px;
 }
 
 #preview{
