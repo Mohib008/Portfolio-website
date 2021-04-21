@@ -272,6 +272,18 @@ h6{ font-size: 16px; }
     font-size: 12;
 }
 
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#skills{
+    display: flex;
+    background-color: var(--previewShadow);
+    justify-content: center;
+    margin-bottom: 3em;
+
+}
+
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
