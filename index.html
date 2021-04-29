@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Website</title>
+    <title>Mohib Arsala</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Russo+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
+  <div class="nav-wrapper">
+    <div class="dots-wrapper">
+      <div id="dot-1" class="browser-dot"></div>
+      <div id="dot-2" class="browser-dot"></div>
+      <div id="dot-3" class="browser-dot"></div>
+    </div>
+    <ul id="navigation">
+      <li><a target="_self" href="tel:6477867378">Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
@@ -27,7 +43,6 @@
                     <ul id="navigation">
                         <li><a target="_self" href="tel:6477867378">Contact
                         </a></li>
-                        
                     </ul>
                 </div>
                 <div class="left-column">
@@ -35,10 +50,10 @@
                     <h5 style="text-align:center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-option-wrapper">
-                      <div id="light-mode" class="theme-dot"></div>
-                      <div id="blue-mode" class="theme-dot"></div>
-                      <div id="green-mode" class="theme-dot"></div>
-                      <div id="purple-mode" class="theme-dot"></div>
+                      <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                      <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                      <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                      <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <P id="sittings-note">Theme sitting is changible as well <br> saved for your next visit</P>
                 </div>
@@ -115,7 +130,7 @@
                     <div class="projects-review">
                         <h6 class="project-title">SDR Construcrtion.inc Website</h6>
                         <p class="project-intro">oifasdfuiwoeuiasfddsfiuas</p>
-                        <a href="#">Read More</a>
+                        <a href="post.html">Read More</a>
                     </div>
                 </div>
               </div>
@@ -166,5 +181,7 @@
           </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
