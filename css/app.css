@@ -237,7 +237,7 @@ h6{ font-size: 16px; }
     background-color: lightgreen;
 
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(201, 130, 130, 0.75);
     -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
 
     cursor: pointer;
@@ -299,6 +299,18 @@ h6{ font-size: 16px; }
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+}
+
+.project{
+    border: 1px solid var(--bordercolor);
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.projects-review{
+    background-color: #fff;
+    padding: 15px;
 }
 
 .thumbnail{
