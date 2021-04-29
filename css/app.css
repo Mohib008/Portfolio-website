@@ -8,6 +8,7 @@
   --themeDotBorder:rgb(39, 37, 49);
   --previewBg:rgb(251, 249, 243, 0.8);
   --previewShadow: #f0ead6;
+  --buttonColor: black;
 }
 
 html, body {
@@ -299,6 +300,7 @@ h6{ font-size: 16px; }
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .project{
@@ -318,6 +320,66 @@ h6{ font-size: 16px; }
     display: block;
     height: 180px;
     object-fit: cover;
+}
+
+.projects-review{
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid var(--bordercolor);
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+
+}
+
+.project-title{
+    color: black;
+    margin: 0;
+}
+
+.project-intro{
+    color: #4b5156;
+    font-size: 16px;
+}
+
+#contact-form{
+  max-width: 600px;
+  display: block;
+  background-color: var(--maincolor);
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--bordercolor);
+}
+
+#contact-form label {
+  line-height: 2.7em;
+}
+
+#contact-form textarea {
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.input-field{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: var(--secondarycolor);
+  border: 1px solid var(--bordercolor);
+  font-size: 14px;
+}
+
+#submit-btn{
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  border: none;
+  background-color: var(--buttonColor);
 }
 
 @media screen and (max-width: 1200px) {
